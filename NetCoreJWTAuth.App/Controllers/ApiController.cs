@@ -26,7 +26,7 @@ namespace NetCoreJWTAuth.App.Controllers
         {
             var userName = User.Identity.Name;
 
-            return Ok($"Super secret content, I hope you've got clearance for this {userName}...");
+            return Ok($"Super secret content, I hope you've got clearance for this {userName}...TEST ADDED");
         }
 
         [Authorize(Policy = "TrainedStaffOnly")]
